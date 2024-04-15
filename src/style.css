@@ -2,3 +2,20 @@ img{
       width: 100px;
       height:100px;
 }
+li{
+      list-style: none;
+}
+body{
+      max-height: 100dvh;
+      background-image: url(./images/burger.jpg);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+}
+
+li > ul:last-child {
+     img{
+      background-image: url(./images/grape.jpg);
+      background-position: center;
+     }
+    }

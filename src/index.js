@@ -1,31 +1,27 @@
 import './style.css';
-function component() {
+import { content } from './frontPage.js';
+
+// function component() {
 
 
-      const element = document.createElement("div");
+//       const element = document.createElement("div");
 
-      // Lodash, now imported by this script
-      element.innerHTML = "hellow dingus";
-      // element.innerHTML = myName("Dingus");
+//       // Lodash, now imported by this script
+//       element.innerHTML = "hellow dingus";
+//       // element.innerHTML = myName("Dingus");
 
-      return element;
-    }
+//       return element;
+//     }
 
-    document.body.appendChild(component());
-// Define a webpack context for the images directory
-const imagesContext = require.context('./images', false, /\.(png|jpe?g|gif|svg)$/);
+    document.body.appendChild(content());
 
-// Create an object to store imported images
+
+
+const allImages = require.context('./images',false,/\.(png|jp?g|gif|svg)$/);
+
 const images = {};
 
-// Iterate over each file in the context
-imagesContext.keys().forEach((key) => {
-  // Extract the filename from the key
+allImages.keys().forEach((key)=>{
   const fileName = key.split('/').pop();
-
-  // Import the image file and add it to the images object
-  images[fileName] = imagesContext(key);
-});
-
-// Now you can use the images object to access the imported images
-console.log(images); // { 'image1.jpg': Module, 'image2.jpg': Module, ... }
+  images[fileName] = allImages(key);
+})
