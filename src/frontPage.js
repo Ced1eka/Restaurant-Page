@@ -19,9 +19,16 @@ function content() {
   ul3.textContent = "Mech juice";
   const sauce = document.createElement("img");
 
+  const para = document.createElement("p");
+  para.textContent = `"Forget love at first sight, it's love at first bite here!"`;
+  const customerPara = document.createElement("p");
+  customerPara.textContent = 'Wholesome foodie sheeple';
 
   h1.textContent = "Sheepy's Tavern";
   content.appendChild(h1);
+  content.appendChild(para);
+  content.appendChild(customerPara);
+
   content.appendChild(li);
   li.appendChild(ul1);
   li.appendChild(ul2);
