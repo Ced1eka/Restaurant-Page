@@ -2,6 +2,7 @@ export { content };
 
 function content() {
   const content = document.querySelector("#content");
+  content.classList.add("menubody");
   const h1 = document.createElement("h1");
 
   const ul = document.createElement("ul");
@@ -11,6 +12,7 @@ function content() {
   const li1 = document.createElement("li");
   li1.textContent = "goop soup";
   const ulImg1 = document.createElement("img");
+  ulImg1.classList.add("ulImg");
   ulImg1.src = "./images/udon.jpg";
   const lip1 = document.createElement("p");
   lip1.textContent = "Only the most freshest of ingredients";
@@ -18,6 +20,7 @@ function content() {
   const li2 = document.createElement("li");
   li2.textContent = "eldar Special";
   const ulImg2 = document.createElement("img");
+  ulImg2.classList.add("ulImg");
   ulImg2.src = "./images/salad.jpg";
   const lip2 = document.createElement("p");
   lip2.textContent = "Only the most freshest of ingredients";
@@ -25,6 +28,7 @@ function content() {
   const li3 = document.createElement("li");
   li3.textContent = "Mech juice";
   const ulImg3 = document.createElement("img");
+  ulImg3.classList.add("ulImg");
   ulImg3.src = "./images/grape.jpg";
   const lip3 = document.createElement("p");
   lip3.textContent = "Only the most freshest of ingredients";
