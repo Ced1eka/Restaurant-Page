@@ -1,31 +1,97 @@
-img{
-      width: 100px;
-      height:100px;
-}
-li{
-      list-style: none;
-}
-body{
-      max-height: 100dvh;
-      background-image: url(./images/burger.jpg);
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-position: center;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+
+:root {
+  --league-spartan-font-family: "League Spartan", sans-serif;
+  --font-optical-sizing: auto;
 }
 
-#content, li{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-li > ul:last-child {
-     img{
-      background-image: url(./images/grape.jpg);
-      background-position: center;
-     }
-    }
+* {
+  margin: 0;
+  padding: 0;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
+li {
+  list-style: none;
+}
+body {
+  max-height: 100dvh;
+  background-image: url(./images/burger.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#content,
+li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0 0 0;
+}
+
+ul{
+      font: initial;
+      margin: .5rem 0 .5rem 0;
+}
+.league-spartan {
+  font-family: var(--league-spartan-font-family);
+  font-optical-sizing: var(--font-optical-sizing);
+  font-style: normal;
+}
+
+.league-spartan-s {
+  font-weight: 400;
+}
+
+.league-spartan-sm {
+  font-weight: 500;
+}
+.league-spartan-m {
+  font-weight: 600;
+}
+
+.league-spartan-l {
+  font-weight: 700;
+}
+
+.league-spartan-xl {
+  font-weight: 900;
+}
+
+/* li > ul:last-child {
+  img {
+    background-image: url(./images/grape.jpg);
+    background-position: center;
+  }
+} */
+
+.para {
+  margin-top: 1rem;
+  /* margin-bottom: .5rem; */
+  padding: 1rem 0 1rem 0;
+}
+.customer {
+  align-self: flex-end;
+  font-style: italic;
+}

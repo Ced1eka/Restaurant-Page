@@ -6,6 +6,7 @@ function content() {
 
   const li = document.createElement("li");
   li.textContent = "Empire Classic";
+  li.classList.add("league-spartan-l")
 
   const ul1 = document.createElement("ul");
   ul1.textContent = "goop soup";
@@ -18,11 +19,14 @@ function content() {
   const ul3 = document.createElement("ul");
   ul3.textContent = "Mech juice";
   const sauce = document.createElement("img");
+  sauce.src = "./images/grape.jpg"
 
-  const para = document.createElement("p");
+  const para = document.createElement("h2");
   para.textContent = `"Forget love at first sight, it's love at first bite here!"`;
+  para.classList.add("para");
   const customerPara = document.createElement("p");
   customerPara.textContent = 'Wholesome foodie sheeple';
+  customerPara.classList.add('customer', "league-spartan-m");
 
   h1.textContent = "Sheepy's Tavern";
   content.appendChild(h1);
