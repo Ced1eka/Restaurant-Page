@@ -79,12 +79,6 @@ ul{
   font-weight: 900;
 }
 
-/* li > ul:last-child {
-  img {
-    background-image: url(./images/grape.jpg);
-    background-position: center;
-  }
-} */
 
 .para {
   margin-top: 1rem;
@@ -94,4 +88,21 @@ ul{
 .customer {
   align-self: flex-end;
   font-style: italic;
+}
+ul{
+  display: grid;
+  text-align: center;
+}
+
+li{
+  display: grid;
+grid-template-columns: 2fr 1fr;
+grid-template-rows: 1fr 2fr;
+}
+li > p {
+  grid-area: 2/1/3/2;
+}
+li > img{
+  justify-self: end;
+  grid-area: 2/2/3/3;
 }
