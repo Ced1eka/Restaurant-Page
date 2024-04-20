@@ -1,8 +1,11 @@
 export { content };
 
 function content() {
+  const body = document.querySelector("body");
+  body.classList.add("body-menu");
+
   const content = document.querySelector("#content");
-  content.classList.add("menubody");
+  content.classList.add("content-menu");
   const h1 = document.createElement("h1");
 
   const ul = document.createElement("ul");

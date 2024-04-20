@@ -1,6 +1,7 @@
 import "./style.css";
 import { content } from "./menuPage.js";
 import { home } from "./home.js";
+import { about } from "./about.js";
 
 
 const allImages = require.context("./images", false, /\.(png|jp?g|gif|svg)$/);
@@ -12,5 +13,6 @@ allImages.keys().forEach((key) => {
   images[fileName] = allImages(key);
 });
 
-// document.body.appendChild(content());
-home();
+document.body.appendChild(content());
+// home();
+// about()
