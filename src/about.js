@@ -1,6 +1,8 @@
 export function about() {
   const body = document.querySelector("body");
   body.classList.add("body-about");
+  body.style.backgroundImage ='url("./images/sauce.jpg")';
+
 
   const content = document.querySelector("#content");
   content.classList.add("content-about");

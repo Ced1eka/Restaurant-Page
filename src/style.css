@@ -106,7 +106,7 @@ body {
   padding: 2rem;
   gap: 1rem;
 }
-.body-home {
+/* .body-home {
   background-image: url(./images/homebg.jpg);
 }
 .body-menu {
@@ -116,7 +116,7 @@ body {
 .body-about {
   background-image: url(./images/sauce.jpg);
   color: rgb(240, 94, 106);
-}
+} */
 
 #content {
   display: grid;

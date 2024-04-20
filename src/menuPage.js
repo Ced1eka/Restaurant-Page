@@ -1,8 +1,9 @@
-export { content };
+export { menu };
 
-function content() {
+function menu() {
   const body = document.querySelector("body");
   body.classList.add("body-menu");
+  body.style.backgroundImage ='url("./images/bread.jpg")';
 
   const content = document.querySelector("#content");
   content.classList.add("content-menu");

@@ -1,6 +1,8 @@
 export function home() {
   const body = document.querySelector("body");
   body.classList.add("body-home");
+  body.style.backgroundImage ='url("./images/homebg.jpg")';
+
 
   const content = document.querySelector("#content");
 
